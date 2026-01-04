@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка в клан EliteTwo-ET</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .application-form {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #8a2be2;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            font-size: 1rem;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(45deg, #8a2be2, #ff8c00);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #ff8c00;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <form class="application-form">
+        <h2>Заявка в клан EliteTwo-ET</h2>
+
+        <div class="form-group">
+            <label for="nickname">Ваш игровой ник:</label>
+            <input type="text" id="nickname" name="nickname" required>
+        </div>
+
+        <div class="form-group">
+            <label for="steam">Ссылка на Steam профиль:</label>
+            <input type="url" id="steam" name="steam" required>
+        </div>
+
+        <div class="form-group">
+            <label for="experience">Опыт игры в Rust (в часах):</label>
+            <input type="number" id="experience" name="experience" required>
+        </div>
+
+        <div class="form-group">
+            <label for="discord">Ваш Discord:</label>
+            <input type="text" id="discord" name="discord" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Почему хотите вступить в наш клан?</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit">Отправить заявку</button>
+    </form>
+
+    <a href="index.html" class="back-link">Вернуться на главную</a>
+</body>
+</html>
