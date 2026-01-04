@@ -90,10 +90,25 @@
         .back-link:hover {
             text-decoration: underline;
         }
+
+        .success-message {
+            text-align: center;
+            color: #4CAF50;
+            margin-top: 20px;
+            font-weight: bold;
+            display: none;
+        }
+
+        .error-message {
+            text-align: center;
+            color: #f44336;
+            margin-top: 20px;
+            display: none;
+        }
     </style>
 </head>
 <body>
-    <form class="application-form">
+    <form class="application-form" id="applicationForm">
         <h2>Заявка в клан EliteTwo-ET</h2>
 
         <div class="form-group">
@@ -101,29 +116,4 @@
             <input type="text" id="nickname" name="nickname" required>
         </div>
 
-        <div class="form-group">
-            <label for="steam">Ссылка на Steam профиль:</label>
-            <input type="url" id="steam" name="steam" required>
-        </div>
-
-        <div class="form-group">
-            <label for="experience">Опыт игры в Rust (в часах):</label>
-            <input type="number" id="experience" name="experience" required>
-        </div>
-
-        <div class="form-group">
-            <label for="discord">Ваш Discord:</label>
-            <input type="text" id="discord" name="discord" required>
-        </div>
-
-        <div class="form-group">
-            <label for="message">Почему хотите вступить в наш клан?</label>
-            <textarea id="message" name="message" required></textarea>
-        </div>
-
-        <button type="submit">Отправить заявку</button>
-    </form>
-
-    <a href="index.html" class="back-link">Вернуться на главную</a>
-</body>
-</html>
+        <
